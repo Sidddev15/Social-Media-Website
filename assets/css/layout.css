@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;700&family=Public+Sans:wght@500&display=swap");
+body {
+  margin: 0px;
+  text-align: center;
+  background: linear-gradient(to right, #ffffff, #f1f1f1);
+  font-family: 'Public Sans', sans-serif; }
+  body #layout-main {
+    height: 100%; }
+  body #Webtitle {
+    text-decoration: overline;
+    color: floralwhite;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin: 20px; }
+  body header {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(to right, #0082c8, #0082c8);
+    padding: 5px; }
+  body h4 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: bold; }
+  body ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10px; }
+  body li {
+    margin: 0px 5px; }
+  body a {
+    text-decoration: none;
+    color: floralwhite;
+    font-size: 1rem;
+    transition: 1s ease-in-out; }
+  body a:hover {
+    color: lightgrey; }
+  body p {
+    margin: 0px 5px; }
+  body textarea {
+    height: 12rem;
+    width: 30rem;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+    display: block;
+    margin: 1rem 45rem;
+    border: 1px lightgray ridge;
+    border-radius: 5px; }
+  body input {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 13px;
+    display: inline-flex;
+    flex-direction: column;
+    width: 20rem;
+    border: 1px lightgray ridge;
+    height: 2rem;
+    border-radius: 4px; }
+  body button {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 14px;
+    border: none;
+    background-color: #0082c8;
+    color: floralwhite;
+    margin: 1rem;
+    border: 1px lightgray outset;
+    display: inline-flex;
+    border-radius: 3px;
+    height: 20px; }
+  body #delete_button {
+    color: black;
+    position: relative;
+    left: -40px;
+    margin: 0px -25px;
+    background-color: #0082c8;
+    color: floralwhite;
+    padding: 2px 2px;
+    border: 1px lightslategrey outset;
+    border-radius: 3px; }
+  body #user-friends {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    margin: 2px 5px;
+    position: absolute;
+    top: 5rem;
+    text-align: left;
+    right: 4rem; }
+  body #feed-posts ul {
+    display: flex;
+    flex-direction: column;
+    margin: 1.7rem; }
+  body #post-comments-list ul {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem; }
+  body #friend_name {
+    color: black;
+    font-family: 'Public Sans', sans-serif;
+    position: relative;
+    transition: all 1s ease;
+    font-size: 1.2rem; }
+  body #friend_name:hover {
+    color: #0082c8; }
+  body footer {
+    justify-content: center;
+    background: linear-gradient(to right, #3A1C71, #D76D77, #FFAF7B);
+    padding: 3rem;
+    color: floralwhite; }
+  body #ul_footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    justify-content: center;
+    background: linear-gradient(to right, #3A1C71, #D76D77, #FFAF7B);
+    padding: 3rem;
+    color: floralwhite; }
+  body #footer-nav {
+    color: floralwhite;
+    display: flex;
+    justify-content: center; }

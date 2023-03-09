@@ -1,0 +1,39 @@
+
+<h1>
+    Coderthon / <%= title %>
+</h1>
+
+
+<section id="feed-posts">
+    
+    <% if(locals.user){ %>
+    <h4>Posts</h4>
+    <form action="/posts/create" id="new-post-form" method="POST">
+        <textarea name="content" cols="30" rows="3" placeholder="Type Here..." required></textarea>
+        <button type="submit">Post</button>
+    </form>
+    <% } %>
+
+    <div id="posts-list-container">
+        <%if (locals.user) { %>
+            <ul>
+                <% for(post of posts) { %>
+                    
+                    <%- include('_post') -%>
+                    
+                <%} %>
+            </ul>
+        <% } %>
+    </div>
+</section>
+
+<section id="user-friends">
+        <% if(locals.user){ %>
+            <h4>Friends</h4>
+            <% for(u of all_users){ %>
+                <p>
+                    <a id="friend_name" href="/users/profile/<%= u.id %>"><%= u.name %></a>
+                </p>
+        <% } %>
+    <% } %>
+</section>
